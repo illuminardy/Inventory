@@ -1,0 +1,87 @@
+.react-table {
+  width: 100%;
+  height: 100%;
+  border-spacing: 0;
+  border-collapse: collapse;
+
+  &--thead {
+    text-align: left;
+    background: #23bdc2;
+
+    th {
+      border: 1px solid #ddd;
+      border-spacing: 0;
+      padding: 8px;
+    }
+  }
+  &--tbody {
+    td {
+      border: 1px solid #ddd;
+      padding: 8px;
+    }
+    tr:nth-child(2n) {
+      background: darkgrey;
+    }
+  }
+}
+.-pagination,
+.-previous,
+.-next {
+  flex: 1;
+  text-align: center
+}
+.-pagination {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-top: 3px;
+
+  .-pageInfo {
+    display: flex;
+    margin: 0 10px 3px;
+    white-space: nowrap;
+
+    .-pageJump {
+      input {
+        width: 70px;
+        text-align: center;
+      }
+    }
+
+    .-totalPages {
+      margin-left: 5px;
+    }
+  }
+
+  .-btn {
+    display: block;
+    width: 100%;
+    border: 0;
+    border-radius: 3px;
+    padding: 6px;
+    font-size: 1em;
+    color: rgba(0,0,0,0.6);
+    background: rgba(0,0,0,0.1);
+    transition: all 0.1s ease;
+    cursor: pointer;
+    outline: none;
+
+    &:not([disabled]):hover {
+      background: rgba(0,0,0,0.3);
+      color: #fff
+    }
+  }
+
+  .-center {
+    flex: 1.5;
+    text-align: center;
+    margin-bottom: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around
+  }
+}

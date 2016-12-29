@@ -1,0 +1,35 @@
+.inventory {
+  &__container {
+    width: 90%;
+    margin: 0 auto;
+
+    .-loading {
+      display: none;
+    }
+  }
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &--title {
+      font-size: 2rem;
+      letter-spacing: 0.5px;
+    }
+    &--cta {
+      background: #23bdc2;
+      height: 20px;
+      letter-spacing: 0.5px;
+      color: white;
+      padding: 10px;
+      display: block;
+      border-radius: 3px;
+      transition: background-color 0.3s ease 0s;
+
+      &:hover {
+        background: black;
+        cursor: pointer;
+      }
+    }
+  }
+}
