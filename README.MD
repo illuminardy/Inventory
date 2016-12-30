@@ -1,3 +1,5 @@
+** Assumes you have both MongoDB and Redis installed **
+
 1. npm install
 2. npm run build
 2. webpack

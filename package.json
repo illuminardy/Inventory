@@ -1,8 +1,12 @@
 {
-  "author": "Yanardy",
-  "name": "todo",
+  "author": "Yanardy Sanchez",
+  "name": "Inventory",
   "version": "1.0.0",
   "description": "Inventory",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/illuminardy/Inventory.git"
+  },
   "main": "server.js",
   "scripts": {
     "build": "npm run clean && npm run build-modules",
@@ -30,7 +34,6 @@
       }
     }
   },
-  "author": "Yanardy Sanchez",
   "license": "MIT",
   "dependencies": {
     "babel-loader": "^6.2.9",
@@ -46,6 +49,8 @@
     "react-input-calendar": "^0.3.14",
     "react-redux": "^5.0.1",
     "react-table": "^3.1.4",
+    "redis": "^2.6.3",
+    "redis-server": "^0.4.0",
     "redux": "^3.6.0",
     "superagent": "^3.3.0"
   },
